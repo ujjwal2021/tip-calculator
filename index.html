@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="heading" id="heading">
+            <span>Tip calculator</span>
+        </div>
+        <div class="box" id="box">
+            <div class="question">How much was your bill?</div>
+            <label for="bill">$</label>
+            <input type="number" placeholder="Bill Amount" class="bill-amount" id="bill-amount" value="">
+            <div class="question">How was our service?</div>
+            <select name="service" id="service" required>
+                <option value="0">--Choose an option--</option>
+                <option value="0.01">Below Average</option>
+                <option value="0.05">Average</option>
+                <option value="0.1">Above Average</option>
+                <option value="0.15"> Very Good</option>
+                <option value="0.2">Excellent</option>
+            </select>
+            <div class="question">How many people are sharing the bill?</div>
+            <input min="1" type="number" placeholder="Number of people" class="people-number" id="people-number">
+            <label>People</label>
+            <div class="button" id="button">
+                <button class="calculate" id="calculate">Calculate!</button>
+                <button class="refresh" id="refresh">Refresh</button>
+            </div>
+            <div class="calculation hidden" id="calculation">
+                <div class="total-amount" id="total-amount">
+                    Total amount:
+                    <span class="amount" id="amount">$ </span>
+                </div>
+                <div class="total-tip" id="total-tip">
+                    The total tip:
+                    <span class="tip-amount" id="tip-amount">$ </span>
+                </div>
+                <div class="tip-per-person" id="total-per-person">
+                    Tip per person:
+                    <span class="single-tip" id="single-tip">$ </span>
+                </div>
+                <div class="pay-per-person" id="pay-per-person">
+                    total per person:
+                    <span id="per-person">$ </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
